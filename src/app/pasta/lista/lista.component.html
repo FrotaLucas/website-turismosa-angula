@@ -1,0 +1,21 @@
+<p>lista works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Cliente</th>
+      <th>E-mail</th>
+      <th>Valor</th>
+      <th>Desconto</th>
+      <th>Data de Fabricacao</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{p1.nome}}</td>
+      <td>{{p1.email}}</td>
+      <td>{{p1.valor | currency: 'BRL'}}</td>
+      <td>{{p1.desconto | percent}}</td>
+      <td>{{p1.fabricacao | date: 'fullDate'}}</td>
+    </tr>
+  </tbody>
+</table>
